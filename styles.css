@@ -1,0 +1,305 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Adicione isso ao seu arquivo styles.css */
+#home {
+    text-align: center; /* Alinha o texto à esquerda */
+    padding: 20px; /* Adiciona um espaço ao redor da seção */
+    font-size: 1.2em; /* Ajuste esse valor conforme necessário */
+    
+}
+
+#home h2 {
+    margin: 0; /* Remove margens para alinhar melhor */
+    font-size: 2.5em; /* Ajuste esse valor conforme necessário */
+
+}
+#home p {
+    font-size: 1.2em; /* Ajuste esse valor conforme necessário */
+}
+
+/* Estilos globais */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* Cabeçalho com flexbox */
+header {
+    background-color: #003031;
+    color: #fff;
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #ffcc00;
+}
+
+nav a.ativo {
+    font-weight: bold;
+    color: #ffcc00;
+    text-decoration: underline;
+}
+
+/* Seções */
+main section {
+    padding: 2rem;
+    text-align: center;
+}
+
+#home {
+    background-color: #f4f4f4;
+}
+
+#sobre, #servicos {
+    background-color: #e0e0e0;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer a {
+    color: #ffcc00;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #ffffff;
+}
+
+/* Estilos para o formulário de contato */
+#contato {
+    background-color: #1b1b1b;
+    padding: 3rem;
+    border-radius: 40px;
+    max-width: 500px;
+    margin: 2rem auto; /* Essa linha centraliza o contêiner */
+    margin-left: auto; /* Alinha à direita */
+    margin-right: 0; /* Remove a margem direita */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative; /* Melhor controle de posição */
+}
+
+/* Estilo para o título "Contato" */
+#contato h2 {
+    color: #fff; /* Define a cor do texto como branco */
+}
+
+.title::before {
+    width: 30px;
+    height: 30px;
+}
+
+.title::after {
+    width: 30px;
+    height: 30px;
+    animation: pulse 1s linear infinite;
+}
+
+.title::before,
+.title::after {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    left: 0px;
+    background-color: #00bfff;
+}
+
+.message {
+    font-size: 17px; /* Aumentar o tamanho da fonte */
+    color: rgba(255, 255, 255, 0.8); /* Alterar a cor para um preto mais escuro */
+    margin-bottom: 1.5rem; /* Espaço abaixo da mensagem */
+    text-align: left; /* Centraliza a mensagem */
+}
+
+.signin {
+    text-align: center;
+}
+
+.signin a:hover {
+    text-decoration: underline royalblue;
+}
+
+.signin a {
+    color: #00bfff;
+}
+
+/* Estilos do formulário */
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 380px;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+    background-color: #1a1a1a;
+    color: #fff;
+    border: 1px solid #333;
+}
+
+.title {
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    color: #00bfff;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+label {
+    font-weight: bold;
+    color: #333;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+input:focus, textarea:focus {
+    border-color: #007acc;
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* Botão de envio */
+button[type="submit"] {
+    padding: 0.75rem 2rem;
+    border: none;
+    background-color: #007acc;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+    align-self: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button[type="submit"]:hover {
+    background-color: #005f99;
+    transform: scale(1.05);
+}
+
+/* Alinhamento e ajuste de margem para o conteúdo */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Estilos do cabeçalho */
+header {
+    background-color: #003031;
+    color: #fff;
+    padding: 1rem; /* Ajuste a altura do cabeçalho */
+    display: flex;
+    flex-direction: column; /* Empilha os itens em telas menores */
+    align-items: center; /* Centraliza o conteúdo */
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column; /* Empilha os itens verticalmente em dispositivos móveis */
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0.5rem 0; /* Adiciona espaçamento entre os itens */
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-weight: 500;
+}
+
+/* Estilo para telas maiores */
+@media (min-width: 768px) {
+    nav ul {
+        flex-direction: row; /* Alinha os itens em linha em telas maiores */
+    }
+    nav ul li {
+        margin: 0 1.5rem; /* Espaçamento horizontal */
+    }
+}
+
+/* Estilos para a seção principal */
+.home-content {
+    display: flex;
+    align-items: center; /* Alinha os itens verticalmente no centro */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    gap: 2rem; /* Espaçamento entre o texto e o formulário */
+    padding: 2rem; /* Ajuste conforme necessário */
+}
+
+.home-text {
+    max-width: 400px; /* Ajuste a largura máxima conforme necessário */
+}
+
+.form-container {
+    flex: 1; /* Permite que o formulário ocupe o espaço restante */
+}
+
+/* Para responsividade, se necessário */
+@media (max-width: 768px) {
+    .home-content {
+        flex-direction: column; /* Muda para coluna em telas pequenas */
+        text-align: center; /* Centraliza o texto */
+    }
+}

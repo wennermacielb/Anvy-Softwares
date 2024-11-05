@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anvy Softwares</title>
+    <link rel="icon" href="img/logo.png" type="image/x-icon">
+    <!-- Link para o arquivo CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>
+            <img src="img/logo.png" alt="Anvy Softwares" style="width: 80px; height: auto; vertical-align: middle;">
+            Anvy Softwares
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção de Contato -->
+    <section id="contato">
+        <h2>Contato</h2>
+        <form class="form" id="contactForm">
+            <p class="title">Entre em Contato</p>
+            <p class="message">Preencha os campos abaixo para enviar sua mensagem.</p>
+            
+            <div class="form-group">
+                <label for="nome">
+                    <input class="input" type="text" id="nome" name="nome" placeholder=" " required>
+                    <span>Nome</span>
+                </label>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">
+                    <input class="input" type="email" id="email" name="email" placeholder=" " required>
+                    <span>E-mail</span>
+                </label>
+            </div>
+            
+            <div class="form-group">
+                <label for="telefone">
+                    <input class="input" type="tel" id="telefone" name="telefone" placeholder=" " required>
+                    <span>Telefone</span>
+                </label>
+            </div>
+            
+            <div class="form-group">
+                <label for="mensagem">
+                    <textarea class="input" id="mensagem" name="mensagem" placeholder=" " required></textarea>
+                    <span>Mensagem</span>
+                </label>
+            </div>
+            
+            <button class="submit" type="submit">Enviar</button>
+        </form>
+    </section>
+    
+
+    <!-- Seção Principal -->
+    <main>
+        <!-- Seção de Apresentação -->
+        <section id="home">
+            <h2>Bem-vindo à Anvy Softwares</h2>
+            <p>Especialistas em desenvolvimento de softwares personalizados para o seu negócio.</p>
+        </section>
+
+        <!-- Seção Sobre -->
+        <section id="sobre">
+            <h2>Sobre Nós</h2>
+            <p>Na Anvy Softwares, oferecemos soluções inovadoras para transformar o seu negócio. Nossa equipe é formada por especialistas em tecnologia, focados em qualidade e resultados.</p>
+        </section>
+
+        <!-- Seção de Serviços -->
+        <section id="servicos">
+            <h2>Nossos Serviços</h2>
+            <ul>
+                <li>Desenvolvimento de Cardápios digitais</li>
+                <li>Soluções de E-commerce</li>
+                <li>Suporte e Manutenção</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 Anvy Softwares</p>
+    </footer>
+
+    <!-- Conectar o JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
